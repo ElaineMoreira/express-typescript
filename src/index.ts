@@ -7,9 +7,9 @@ const { PORT = 3000 } = process.env;
 
 app.use(express.json());
 
-// busca todos os posts
+// Uma rota que lista todos os posts;
 app.get('/posts', postControllers.getPosts);
-
+//  Uma rota que exiba um único post por meio de seu id;
 app.listen(PORT, () => {
   console.log(`Online na porta ${PORT}`);
 });
